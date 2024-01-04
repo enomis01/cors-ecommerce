@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="Login.js"></script>
+  <link rel="stylesheet" href="Login.css"/>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <title>E-COMMERCE</title>
+</head>
+<body>
+  <div class="div-login">
+    <img class="logo" src="Logo.jpg" alt="img" />
+    <h5>Login</h5>
+    <form id="loginForm" onsubmit="effettuaLogin(event)">
+      <input
+        type="email"
+        class="form-control in"
+        id="email"
+        placeholder="Email"
+        required
+      />
+      <input
+        type="password"
+        class="form-control in"
+        id="password"
+        placeholder="Password"
+        required
+        autocomplete="current-password"
+      />
+      
+      <button type="submit" class="ut">Login</button>
+    </form>
+    <div id="notifica"></div>
+
+    <button type="button" onclick="goToRegistration()" class="ut">Registrati</button>
+    <a class="a" href="recovery.html">Password dimenticata?</a>
+  </div>
+</body>
+</html>
